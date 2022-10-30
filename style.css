@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* nav bar */
+.navbar {
+    background-color: #f2cc0f;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.container-fluid.my-container-fluid {
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    text-align: justify;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 45px;
+
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+}
+
+ul li a {
+    font-family: 'Henny Penny';
+}
+
+.navbar-nav a:hover {
+    transform: scale(110%);
+}
+
+
+.navbarLogo img {
+    width: 272px;
+    height: 72px;
+
+
+}
+
+.navbarLogo img:hover {
+    transform: scale(105%);
+}
+
+
+
+
+
+.nav-link {
+    color: green !important;
+}
+
+.nav-link:hover {
+    color: #9453a6 !important
+}
+
+nav ul li {
+    padding: 0 14px;
+}
+
+/*  carousel */
+
+.carousel-item {
+    height: 100vh;
+    min-width: 300px;
+}
+
+.bg-1 {
+    background-image: url(/images/2.jpg);
+}
+
+.bg-2 {
+    background-image: url(/images/1.jpg);
+}
+
+.bg-3 {
+    background-image: url(/images/3.jpg);
+}
+
+
+.bg-1,
+.bg-2,
+.bg-3 {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 85px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: 'Pattaya', sans-serif;
+
+    text-shadow: 0 1px 45px;
+
+}
+
+
+
+.carousel-caption p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    text-shadow: 0 1px 45px;
+    font-family: 'Henny Penny';
+
+}
+
+
+.carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    color: green !important;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-shadow: 0 1px 45px;
+
+}
+
+.carousel-caption a:hover {
+    color: #9453a6 !important;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .media-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-toggler {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .item-menu {
+        order: 4;
+    }
+
+    .carousel-caption {
+        bottom: 350px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 65px;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+        width: 100%;
+        font-family: 'Henny Penny';
+    }
+
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+    .media-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-toggler {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .item-menu {
+        order: 4;
+    }
+
+    .carousel-caption {
+        bottom: 165px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+        height: 300px;
+    }
+
+
+}
+
+/* our gallery index */
+
+
+
+.single-album {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.album-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.album-img img {
+    width: 100%;
+    transition: .4s;
+}
+
+.single-album:hover .album-img img {
+    transform: scale(1.5, 1.5);
+}
+
+
+
+
+
+
+
+/* faqs accordion */
+
+.section {
+    padding: 7em 0;
+    background-color: #f2cc0f;
+}
+
+
+@media only screen and (max-width : 767px) {
+    /* section img {
+        display: none;
+    } */
+
+
+
+    .section {
+        padding: 1em 0;
+    }
+
+
+
+    .faq {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+/* contact */
+p {
+    font-family: 'Henny Penny';
+}
+
+p.life {
+    justify-content: center;
+    text-align: center;
+    color: green;
+    font-family: 'Henny Penny';
+}
+
+p.contact {
+    justify-content: center;
+    text-align: center;
+
+    font-family: 'Henny Penny';
+}
+
+
+
+div .text {
+    color: green;
+}
+
+
+.btn.btn-success {
+    border-width: 2px;
+    padding: 8px;
+
+}
+
+.accordion-item {
+    font-size: 15px;
+    border: 1px solid green;
+}
+
+.accordion-item h2 button {
+    display: block;
+    text-align: left;
+
+    color: white !important;
+    position: relative;
+
+
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0px;
+
+
+}
+
+h2 {
+    color: green;
+    font-family: 'Henny Penny';
+
+}
+
+
+
+/* icons drop down/up */
+.accordion-item h2 button .fa {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%) rotate(-180deg);
+
+    transition: .3s all ease;
+
+}
+
+.accordion-item h2 button.collapsed .fa {
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+/* video gallery */
+.gallery {
+    background-color: green;
+    padding: 80px 0;
+}
+
+.gallery iframe {
+    width: 100%;
+    height: 230px;
+
+    padding: 5px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+
+
+/* .gallery photo / also sponsors*/
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    box-shadow: 5px 5px 15px #000;
+
+
+
+}
+
+.gallery img:hover {
+    transform: scale(110%);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Henny Penny';
+}
+
+@media only screen and (max-width : 1068px) {
+    .gallery img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width:468px) and (max-width:1067px) {
+    .gallery img {
+        display: block;
+    }
+}
+
+
+h1,
+h3 {
+    text-transform: uppercase;
+    font-family: 'Henny Penny';
+
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: green;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #f2cc0f;
+
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: green;
+    border: 1px solid green;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+    border-radius: 20%;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+    color: #9453a6;
+    transform: scale(110%);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.footer ul li:hover {
+    transform: scale(110%);
+}
+
+.footer ul li a {
+    color: green;
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: #9453a6;
+    transform: scale(110%);
+
+
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #9453a6;
+}
